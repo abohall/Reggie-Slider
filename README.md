@@ -31,12 +31,13 @@
   
 <h3>You'll need a few data attributes to make it work.</h3>
   
-``` 
+```
 data-id="foo" \\ unique to each slider 
 data-swipe="boolean" \\ allow swiping with mouse
 data-auto-slide="boolean" \\ auto slide slider every 5 seconds 
 data-arrows="boolean" \\ show or hide navigation 
 data-auto-height="false" \\ correct the height of the slider if images are different heights
+
 ```
   
 <h2>Demo</h2>
