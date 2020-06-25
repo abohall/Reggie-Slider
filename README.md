@@ -21,10 +21,12 @@
 </ul>
 
 <h2>Setup</h2>
-Place everything within a template tag
+<p>Place everything within a template tag</p>
+
 ```
 <template class="reggie-slider-template"></template>
 ```  
+
   <p>Everything that is placed in a template tag with the above class will turn into a slider!</p>
   
   <h3>You'll need a few data attributes to make it work.</h3>
