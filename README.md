@@ -31,7 +31,7 @@
   
 <h3>You'll need a few data attributes to make it work.</h3>
   
-```
+``` 
 data-id="foo" \\ unique to each slider 
 data-swipe="boolean" \\ allow swiping with mouse
 data-auto-slide="boolean" \\ auto slide slider every 5 seconds 
