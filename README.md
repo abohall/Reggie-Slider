@@ -18,7 +18,7 @@
 <ul>
   <li>Lazy Loading Images</li>
   <li>Loading Spinner</li>
-  <li>Slide counter</li>
+  <li>Slide Counter</li>
 </ul>
 
 <h2>Setup</h2>
