@@ -1,0 +1,82 @@
+.reggie-slider {
+    position: relative;
+    z-index: 99;
+}
+.reggie-slider[data-swipe] {
+    cursor: pointer;
+}
+.reggie-slider .reggie-slider-outer {
+    overflow: hidden;
+}
+.reggie-slider .reggie-slider-inner {
+    float: left;
+    white-space: nowrap;   
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+}
+.reggie-slider .reggie-slider-inner.reggie-slider-resizing {
+    transition: all 0s ease 0s;
+}
+.reggie-slider .reggie-slider-item {
+    background-color: rgba(0,0,0,.85);
+    position: relative;
+    float: left;
+    min-height: 1px;
+    white-space: normal;
+}
+.reggie-slider-height {
+  transition: height 500ms ease-in-out;
+}
+
+/* Navigation Control Styles
+***************************/
+.reggie-slider .reggie-slider-controls {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    z-index: 200;
+}
+.slideshow-carousel-container .reggie-slider .reggie-slider-controls {
+    top: 0;
+}
+.photo-carousel .reggie-slider-controls .reggie-slider-previous, .photo-carousel .reggie-slider-controls .reggie-slider-next {
+    color: rgba(0,0,0,.4);
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(255,255,255,.9);
+    padding: 5px 10px;
+    font-size: 18px;
+    user-select: none;
+    opacity: .6;
+    top: 0px;
+}
+.photo-carousel .reggie-slider-controls .reggie-slider-previous:hover, .photo-carousel .reggie-slider-controls .reggie-slider-next:hover {
+    color: rgba(0,0,0,.8);
+    background-color: #fff;
+}
+.photo-carousel .reggie-slider-controls .reggie-slider-previous {
+    left: auto;
+    right: 40px;
+    top: 5px;
+}
+.photo-carousel .reggie-slider-controls .reggie-slider-next {
+    right: 5px;
+    top: 5px;
+}
+.photo-container {
+    text-align: center;
+}
+.photo-carousel img {
+    display: initial;
+    object-fit: contain;
+    max-height: 500px;
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+}
