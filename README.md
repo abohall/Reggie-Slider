@@ -11,6 +11,7 @@
   <li>Multiple Image Slider</li>
   <li>Swipe Control</li>
   <li>Auto Slide (based on location of slider in viewport and if you're hovering over the slider or not)</li>
+  <li>Auto Height</li>
 </ul>
 
 <h2>Features to come...</h2>
@@ -31,10 +32,14 @@
   
   <h3>You'll need a few data attributes to make it work.</h3>
   
-  ```
-  data-id="foo" \\ access public events for previous, next.
-  data-arrows="boolean" \\ show or hide navigation. 
-  data-auto-slide="boolean" \\ auto slide the player every 5 seconds. Note, auto sliding pauses if the slider is out of view or you mouse over it.
-  ```
+```
+data-id="foo" \\ unique to each slider 
+data-swipe="boolean" \\ allow swiping with mouse
+data-auto-slide="boolean" \\ auto slide slider every 5 seconds 
+data-arrows="boolean" \\ show or hide navigation 
+data-auto-height="false" \\ correct the height of the slider if images are different heights
+```
   
+<h2>Demo</h2>
+http://andrewbohall.com/slider
 
