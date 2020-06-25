@@ -22,7 +22,8 @@
 
 <h2>Setup</h2>
 Place everything within a template tag
-```javascript <template class="reggie-slider-template"></template>
+```
+<template class="reggie-slider-template"></template>
 ```  
   <p>Everything that is placed in a template tag with the above class will turn into a slider!</p>
   
