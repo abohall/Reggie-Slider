@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider Example</title>
+	<link rel="stylesheet" href="reggieslider.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a53aa24cf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>The Reggie Slider!</h1>
+				<p>When I started at my last opportunity, we primarily used jQuery plugins to build our sites. After a few years, we noticed our pages were slower and that our jQuery slider plugin was full of bugs.</p>
+				<p>This is not that slider. After being released from my job due to the economic impact of COVID-19, I took some time to start re-writing it!</p>
+				<p>This is a vanilla JavaScript slider. It <strong>can</strong> be dependent free, but I've chosen to use the always awesome 'Font Awesome' for the navigation.</p>
+				<p>Just a little insight into why I've named this project "The Reggie Slider"...one of the first bugs I encountered with it was when the autoplay function worked a little too well. If you were to mouseover and mouseout of the slider multiple times, it would cause the event to fire multiple times. This caused the slider to just keep going and going...just like the Goldendoodle you'll see in these pictures, Reggie.</p>
+				<p>This is my first "Open Source" project that I have placed on GitHub. I am actively working on improvements and welcome any feedback or questions!</p>
+		</div>
+	</div>
+	</div>
+	<div class="container photo-carousel">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Single Image Slider</h2>
+				<template class="reggie-slider-template" data-id="reggie-1" data-arrows="true" data-auto-height="true">
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/01.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/02.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/03.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/04.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/05.jpg" alt="Reggie">
+					</div>
+				</template>
+			</div>
+			<div class="col-sm-12">
+				<h2>Multiple Image Slider</h2>
+				<div class="alert alert-secondary" role="alert">
+					<p>You can have as many images on desktop as you want. I hardcoded the design to change at medium and small breakpoints to show two then one image so the image size didn't shrink so dramtically.</p>
+				</div>
+				<template class="reggie-slider-template" data-id="reggie-2" data-columns="3" data-arrows="true" data-auto-height="false">
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/01.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/02.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/03.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/04.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/05.jpg" alt="Reggie">
+					</div>
+				</template>
+			</div>
+			<div class="col-sm-12">
+				<h2>Slider with Auto Play</h2>
+				<div class="alert alert-secondary" role="alert">
+					<p>If you hover over the carousel or it leaves the viewport, auto play pauses.</p>
+				</div>
+				<template class="reggie-slider-template" data-id="tucker-1" data-auto-slide="true" data-arrows="true" data-auto-height="false">
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/06.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/07.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/08.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/09.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/10.jpg" alt="Reggie">
+					</div>
+				</template>
+			</div>
+			<div class="col-sm-12">
+				<h2>Slider that you can swipe with your mouse!</h2>
+				<template class="reggie-slider-template" data-id="tucker-2" data-swipe="true" data-auto-slide="false" data-arrows="true" data-auto-height="false">
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/02.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/07.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/01.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/09.jpg" alt="Reggie">
+					</div>
+					<div class="photo-container">
+						<img class="img-responsive" width="750" height="1000" src="img/03.jpg" alt="Reggie">
+					</div>
+				</template>
+			</div>			
+		</div>
+	</div>
+<script async src="reggieslider.js"></script>
+</body>
+</html>
