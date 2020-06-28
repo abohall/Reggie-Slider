@@ -430,8 +430,7 @@ window.__reggie || (window.__reggie = {});
                 event = new CustomEvent('reggieCarouselSlid');
             
             el.dispatchEvent(event);
-            
-            this.slideCounter(el);            
+                     
             if (el.querySelector('.active').nextElementSibling) this.lazyLoad(el, el.querySelector('.active').nextElementSibling.dataset.item);
             utilities.autoHeight(el, activeSlide);
             if (el.movement) el.movement.x = slideshowContainer.firstElementChild.offsetWidth * (activeSlide - 1);
