@@ -550,11 +550,6 @@ window.__reggie || (window.__reggie = {});
                     }, 300);
             }
         },
-        /* hideLoader: function(el, pos) {
-            var activeSlide = el.querySelector('[data-item="' + pos + '"]'),
-                loadingSlide = activeSlide.querySelector('.loading-slide');
-            if (loadingSlide) loadingSlide.style.display = 'none';
-        }, */
         autoSlide: function(el) {
             if (el.getAttribute('data-auto-slide') == 'true') {                
                if (el.autoslide.allowAutoSlide === true) {
