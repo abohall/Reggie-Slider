@@ -21,6 +21,11 @@
   <li>Slide Counter</li>
 </ul>
 
+<h2>Improvements I'd like to make</h2>
+<ul>
+	<li>Variables are using multiple notation styles and that's just sloppy.</li>
+	<li>I'd like to create a function that returns a lot of the variables that are the same in different functions.</li>
+</ul>
 <h2>Setup</h2>
 <p>Place everything within a template tag</p>
 
